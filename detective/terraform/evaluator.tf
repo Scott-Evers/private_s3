@@ -56,7 +56,7 @@ resource "aws_lambda_function" "evaluator" {
   filename      = "lambda.zip"
   function_name = "evaluator"
   role          = aws_iam_role.evaluator.arn
-  handler       = "index.handler"
+  handler       = "evaluator.handler"
   source_code_hash = filebase64sha256("lambda.zip")
   runtime = "nodejs12.x"
 }

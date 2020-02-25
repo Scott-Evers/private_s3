@@ -1,0 +1,47 @@
+{
+    "version": "0",
+    "id": "1952782a-48d6-a703-74da-",
+    "detail-type": "Config Rules Compliance Change",
+    "source": "aws.config",
+    "account": "123456789012",
+    "time": "2020-02-25T03:08:12Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "resourceId": "evers-private-bucket",
+        "awsRegion": "us-east-1",
+        "awsAccountId": "123456789012",
+        "configRuleName": "private_bucket_check",
+        "recordVersion": "1.0",
+        "configRuleARN": "arn:aws:config:us-east-1:123456789012:config-rule/config-rule-ijybj4",
+        "messageType": "ComplianceChangeNotification",
+        "newEvaluationResult": {
+            "evaluationResultIdentifier": {
+                "evaluationResultQualifier": {
+                    "configRuleName": "private_bucket_check",
+                    "resourceType": "AWS::S3::Bucket",
+                    "resourceId": "evers-private-bucket"
+                },
+                "orderingTimestamp": "2020-02-25T03:07:56.214Z"
+            },
+            "complianceType": "NON_COMPLIANT",
+            "resultRecordedTime": "2020-02-25T03:08:11.875Z",
+            "configRuleInvokedTime": "2020-02-25T03:08:10.538Z"
+        },
+        "oldEvaluationResult": {
+            "evaluationResultIdentifier": {
+                "evaluationResultQualifier": {
+                    "configRuleName": "private_bucket_check",
+                    "resourceType": "AWS::S3::Bucket",
+                    "resourceId": "evers-private-bucket"
+                },
+                "orderingTimestamp": "2020-02-25T02:51:32.626Z"
+            },
+            "complianceType": "COMPLIANT",
+            "resultRecordedTime": "2020-02-25T02:51:44.912Z",
+            "configRuleInvokedTime": "2020-02-25T02:51:43.614Z"
+        },
+        "notificationCreationTime": "2020-02-25T03:08:12.295Z",
+        "resourceType": "AWS::S3::Bucket"
+    }
+}
